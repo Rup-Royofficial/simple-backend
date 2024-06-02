@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/reverse', (req, res) => {
+  res.send('<h2>World hello!</h2>')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
