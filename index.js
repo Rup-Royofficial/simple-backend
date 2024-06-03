@@ -14,6 +14,7 @@ Ideally even while working in your system it is better if you declare your PORT 
 it won't be accessible to everyone
 */ 
 
+// sending a response to the server port using app.get()
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
@@ -22,6 +23,7 @@ app.get('/reverse', (req, res) => {
   res.send('<h2>World hello!</h2>')
 })
 
+// listening on a specific port for any incoming msg, listening on this port for any app.get() calls
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
